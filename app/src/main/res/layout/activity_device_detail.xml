@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+
+    android:orientation="vertical"
+    tools:context="com.pombingsoft.planet_iot.activity.switch_controller.DeviceDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_shape"
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding"
+
+
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Name :"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_Size"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:id="@+id/Text_DeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device ID: "
+             android:layout_marginTop="10dp"
+
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_Size"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/Text_DeviceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Password:"
+             android:layout_marginTop="10dp"
+
+
+
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_Size"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/Text_DevicePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User(s): "
+        android:textSize="17sp"
+        android:layout_marginLeft="@dimen/inner_layout_margin"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_shape"
+        android:layout_weight="1"
+
+
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding"
+
+
+        >
+
+        <ListView
+            android:id="@+id/listview_DeviceUsers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

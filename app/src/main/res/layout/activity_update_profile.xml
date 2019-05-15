@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.pombingsoft.planet_iot.activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Update Account Details"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+android:visibility="gone"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_firstName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                         android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/user"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textSize="16sp">
+
+                        <requestFocus />
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="32dp"
+                        android:text="Gender"
+                        android:visibility="gone"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup"
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:id="@+id/RBtn_male"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:id="@+id/RBtn_female"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:inputType="textCapWords">
+
+                    <EditText
+                        android:id="@+id/edt_mobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/mobile"
+
+                        android:hint="Mobile"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:editable="false"
+
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textSize="16sp">
+
+
+                    </EditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+
+                >
+
+                <EditText
+                    android:id="@+id/email_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/email"
+                    android:hint="Email id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="16sp">
+
+
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/marginTop">
+
+                <EditText
+                    android:id="@+id/edt_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/lock"
+
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:editable="false"
+
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_shape"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- </LinearLayout>-->
+
+</LinearLayout>

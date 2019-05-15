@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.pombingsoft.planet_iot.activity.ControlDeviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/PIN_D4_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                >
+            <ImageView
+                android:id="@+id/imgON_PIN_D4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/power_on"
+                android:layout_marginRight="@dimen/marginRightBtn"
+            />
+            <ImageView
+                android:id="@+id/imgOFF_PIN_D4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/power_off"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/PIN_D5_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgON_PIN_D5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_on"
+                    android:layout_marginRight="@dimen/marginRightBtn"
+                    />
+                <ImageView
+                    android:id="@+id/imgOFF_PIN_D5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_off"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/PIN_D6_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgON_PIN_D6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_on"
+                    android:layout_marginRight="@dimen/marginRightBtn"
+                    />
+                <ImageView
+                    android:id="@+id/imgOFF_PIN_D6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_off"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/PIN_D7_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgON_PIN_D7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_on"
+                    android:layout_marginRight="@dimen/marginRightBtn"
+                    />
+                <ImageView
+                    android:id="@+id/imgOFF_PIN_D7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_off"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/PIN_D8_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgON_PIN_D8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_on"
+                    android:layout_marginRight="@dimen/marginRightBtn"
+                    />
+                <ImageView
+                    android:id="@+id/imgOFF_PIN_D8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/power_off"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deviceName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Add New Device"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/inner_layout_margin"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+
+
+        android:padding="@dimen/inner_layout_padding"
+
+
+
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/device" />
+
+            <Spinner
+                android:id="@+id/spin_Device"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone" />
+<!--
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/searchableSpinner_device"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+                android:gravity="start" />
+-->
+
+
+            <AutoCompleteTextView
+                android:id="@+id/searchableSpinner_device"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:textSize="@dimen/edittextSize"
+                android:paddingLeft="@dimen/spinner_padding_left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="visible" />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/text_refresh_device"
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="@dimen/refrsh_icn_size"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/refresh_icn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/device" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <EditText
+                    android:id="@+id/et_DeviceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Device Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/spinner_padding_left"
+
+                    android:textSize="@dimen/edittextSize"
+                   >
+
+
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/device_password" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                >
+
+                <EditText
+                    android:id="@+id/et_DevicePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Device Password"
+                    android:inputType="text"
+                    android:textSize="@dimen/edittextSize"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/spinner_padding_left"
+
+                  >
+
+
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/wifi" />
+
+            <Spinner
+                android:id="@+id/spin_Wifi"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone" />
+
+           <!-- <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/searchableSpinner_wifi"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_weight="1" />-->
+
+
+            <AutoCompleteTextView
+                android:id="@+id/searchableSpinner_wifi"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="@dimen/spinner_padding_left"
+                android:textSize="@dimen/edittextSize"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="visible" />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/text_refresh_wifi"
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="@dimen/refrsh_icn_size"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/refresh_icn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/wifi_pass" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_WIFi_Pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Wifi Password"
+                    android:inputType="text"
+
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/spinner_padding_left"
+
+                    android:textSize="@dimen/edittextSize">
+
+
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spin_Device_location"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/searchableSpinner"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_weight="1" />
+
+
+            <View
+
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="1dp" />
+
+
+        </LinearLayout>
+
+      <!--  <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/time_zone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoText_TimeZone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                />
+
+            <View
+
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="1dp" />
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/time_zone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoText_"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:paddingLeft="@dimen/spinner_padding_left"
+android:textSize="@dimen/edittextSize"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/text_refresh_timzone"
+                android:layout_width="@dimen/refrsh_icn_size"
+                android:layout_height="@dimen/refrsh_icn_size"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/refresh_icn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnAddDevice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_shape"
+                android:text="Add Device"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

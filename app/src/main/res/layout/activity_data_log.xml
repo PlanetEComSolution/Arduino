@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context="com.pombingsoft.planet_iot.activity.DeviceListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Data Log"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/strt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Start Date Time"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+            <EditText
+                android:id="@+id/et_Date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+android:layout_weight="1"
+                android:drawableRight="@drawable/calendar_schedular"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="yyyy-MM-dd"
+                android:inputType="none"
+                android:maxLines="1"
+                  android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_Time"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+
+                android:layout_weight="1"
+                android:drawableRight="@drawable/clock_schedular_1"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="HH:mm"
+                android:inputType="none"
+                android:maxLines="1"
+
+
+                android:paddingLeft="@dimen/spinner_padding_left"
+                android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="End Date Time"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                >
+            <EditText
+                android:id="@+id/et_End_Date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+android:layout_weight="1"
+                android:drawableRight="@drawable/calendar_schedular"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="yyyy-MM-dd"
+                android:inputType="none"
+                android:maxLines="1"
+                    android:textSize="14sp"  />
+
+            <EditText
+                android:id="@+id/et_End_Time"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                android:drawableRight="@drawable/clock_schedular_1"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="HH:mm"
+                android:inputType="none"
+                android:maxLines="1"
+
+
+                android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_getData"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+
+
+            android:background="@drawable/button_shape"
+            android:text="Get Data"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="15sp"
+
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/device_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="No data found!"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

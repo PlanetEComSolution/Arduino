@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/low"
+        android:id="@+id/low"
+        android:title="@string/title_low" />
+
+    <item
+        android:id="@+id/medium"
+        android:icon="@drawable/medium"
+        android:title="@string/title_medium" />
+
+    <item
+        android:id="@+id/high"
+        android:icon="@drawable/high"
+        android:title="@string/title_high" />
+<!--   android:icon="@drawable/ic_notifications_black_24dp"-->
+</menu>

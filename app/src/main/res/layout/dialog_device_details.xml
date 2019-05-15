@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.pombingsoft.planet_iot.activity.AddDeviceActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Name :"
+            android:textSize="17sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+android:textColor="@android:color/primary_text_light"
+            />
+        <TextView
+            android:id="@+id/Text_DeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device ID: "
+            android:textSize="17sp"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+            android:id="@+id/Text_DeviceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currently Using: "
+            android:textSize="17sp"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+            android:id="@+id/Text_controling_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="05dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

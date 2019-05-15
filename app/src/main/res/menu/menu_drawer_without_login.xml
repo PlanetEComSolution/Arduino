@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_BuyVouchers"
+            android:icon="@drawable/user"
+            android:title="Buy Voucher(s)" />
+        <item
+            android:id="@+id/nav_Search_or_Plan"
+            android:icon="@drawable/user"
+            android:title="Search or Plan" />
+        <item
+            android:id="@+id/nav_Fly"
+            android:icon="@drawable/user"
+            android:title="Fly" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/user"
+            android:title="Login" />
+
+    </group>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Update Device Details"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding"
+
+
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="bottom"
+                android:orientation="vertical"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Device Name"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_DeviceName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Device Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_deviceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Device Password"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_DevicePass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Device Password"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Tank Setting"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:id="@+id/spinner_tank_setting"
+                            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingLeft="0dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Function State"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:id="@+id/spinner_tankType"
+                            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:paddingLeft="0dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Upper Level Depth(max 400 cms)"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_Upper_level_depth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Upper Level Depth"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="3"
+
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Upper Level Water Capacity(max 25000 liters)"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_Upper_level_water_capacity"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Upper Level Water Capacity"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+                            android:maxLength="5"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Max Pump On Time(max 240 minutes)"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_pump_on_time_max"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Max Pump On Time"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+                            android:maxLength="3"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Min Pump Cool Time(max 240 minutes)"
+                            android:textColor="@color/colorPrimaryDark" />
+                        <EditText
+                            android:id="@+id/et_pump_cool_time_min"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="Min Pump Cool Time"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/edittextSize"
+                            android:paddingLeft="@dimen/spinner_padding_left"
+                            android:maxLength="3"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

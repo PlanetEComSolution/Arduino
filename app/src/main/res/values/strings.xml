@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Home Automation</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_splash_1">SplashActivity_1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="crash_toast_text">App crashed ! Please select mailing app and click send to report this error ! </string>
+
+    <string name="title_low">Low</string>
+    <string name="title_medium">Medium</string>
+    <string name="title_high">High</string>
+    <string name="title_activity_acheduler">AchedulerActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="notification">Notification</string>
+    <!---->
+    <!-- <string name="device_type_A1">A1</string>
+    <string name="device_type_A2">A2</string>
+    <string name="device_type_A4">A4</string>
+    <string name="device_type_A8">A8</string>
+
+    <string name="device_type_B">B</string>
+
+
+    <string name="device_type_C1">C1</string>
+    <string name="device_type_C2">C2</string>
+    <string name="device_type_C3">C3</string>
+    <string name="device_type_C4">C4</string>
+
+    <string-array name="device_type_Switch">
+        <item>@string/device_type_A1</item>
+        <item>@string/device_type_A2</item>
+        <item>@string/device_type_A4</item>
+        <item>@string/device_type_A8</item>
+    </string-array>
+
+
+    <string-array name="device_type_WaterLevelController">
+        <item>@string/device_type_B</item>
+
+    </string-array>
+
+    <string-array name="device_type_AirQualityMonitor">
+        <item>@string/device_type_C1</item>
+        <item>@string/device_type_C2</item>
+        <item>@string/device_type_C3</item>
+        <item>@string/device_type_C4</item>
+    </string-array>-->
+    <string-array name="seekbar_arr">
+        <item>@string/title_low</item>
+        <item>@string/title_medium</item>
+        <item>@string/title_high</item>
+
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_main4">Main4Activity</string>
+</resources>

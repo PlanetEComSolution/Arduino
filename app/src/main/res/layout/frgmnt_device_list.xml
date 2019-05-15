@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent">
+
+
+    <include
+        layout="@layout/activity_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="@dimen/inner_layout_margin"
+        android:layout_marginLeft="@dimen/inner_layout_margin"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/inner_layout_margin"
+        android:layout_marginBottom="@dimen/inner_layout_margin_fab"
+      />
+
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_addNewDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add_1"
+        app:fab_size="mini"
+        tools:override="true"
+        app:backgroundTint="@color/fab_bg_color" />
+
+   <!-- <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            fab:fab_colorNormal="@color/fab_bg_color"
+
+
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/add"
+            fab:fab_title="Add DeviceNodeMcu"
+
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.pombingsoft.planet_iot.activity.switch_controller.Add_Update_Schedule_Device_A_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+
+android:visibility="gone"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:text="Set Range"
+
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:text="Temperature\nRange"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Min"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/et_min_temp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Min"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/edittextSize"
+                    android:paddingLeft="0dp"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Max"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/et_max_temp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Max"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/edittextSize"
+                    android:paddingLeft="0dp"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Humidity\nRange"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Min"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/et_min_humidity"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Min"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/edittextSize"
+                    android:paddingLeft="0dp"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Max"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/et_max_humidity"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:hint="Max"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/edittextSize"
+                    android:paddingLeft="0dp"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_setRange"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:background="@drawable/button_shape"
+                android:text="Done"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

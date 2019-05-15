@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white"
+        android:gravity="top"
+        android:orientation="vertical"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_temp_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="@dimen/img_size_device_c"
+                    android:layout_height="@dimen/img_size_device_c"
+                    android:src="@drawable/temperature"
+                    android:visibility="gone" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Temperature"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_Size"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_temp_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital_7"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="40sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_humidity_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_device_c"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="@dimen/img_size_device_c"
+                    android:layout_height="@dimen/img_size_device_c"
+                    android:src="@drawable/humidity"
+                    android:visibility="gone" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Humidity"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_Size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_humidity_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital_7"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+
+                android:textSize="40sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_FireAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_device_c"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="@dimen/img_size_device_c"
+                        android:layout_height="@dimen/img_size_device_c"
+                        android:src="@drawable/lpg"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Fire Alarm"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_Size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_FireAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textSize="19sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buzzer_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+
+                        android:layout_width="@dimen/img_size_device_c"
+                        android:layout_height="@dimen/img_size_device_c"
+                        android:src="@drawable/siren"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Fire Status"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_Size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchButton_buzzer_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:textSize="5sp"
+                        android:thumb="@drawable/switch_custom_selector"
+                        app:showText="true"
+                        app:switchTextAppearance="@style/MyStyle"
+
+                        app:track="@drawable/switch_custom_track"
+
+                        />
+                    <!--  android:theme="@style/MySwitch"-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SecurityBreach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_device_c"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/img_size_device_c"
+                    android:layout_height="@dimen/img_size_device_c"
+                    android:src="@drawable/shield" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Occupancy-Last seen"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_Size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Security_Breach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="19sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Flood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_device_c"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="@dimen/img_size_device_c"
+                    android:layout_height="@dimen/img_size_device_c"
+                    android:src="@drawable/flood"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Flood Status"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_Size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_Flood_Level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+                    android:text=""
+
+                    android:textSize="19sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imgvw_Flood"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/okay"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

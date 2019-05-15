@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view_switch_control"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PIN_NAME"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="ggggcc"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/PIN_Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margintop_text"
+                            android:gravity="left|center_vertical"
+                            android:text="currn"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            >
+                        <ImageView
+                            android:id="@+id/imgON_PIN"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/power_on" />
+
+                        <ImageView
+                            android:id="@+id/imgOFF_PIN"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/power_off"
+                           />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:id="@+id/switch_btn"
+                            android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                            android:textSize="5sp"
+                            android:thumb="@drawable/switch_custom_selector"
+                            app:track="@drawable/switch_custom_track"
+                            android:textOn="ON"
+                            android:textOff="OFF"
+                            app:showText="true"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+
+                            app:switchTextAppearance="@style/MyStyle"
+
+                            />
+
+
+
+
+
+                        <!--     app:switchTextAppearance="?android:attr/textAppearanceSmallPopupMenu"-->
+                        <!-- android:switchTextAppearance="@style/MyStyle"-->
+                        <LinearLayout
+                            android:id="@+id/ll_seekbar_Dimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            >
+                            <com.warkiz.widget.IndicatorSeekBar
+                                android:id="@+id/seekbar_Dimmer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:isb_track_rounded_corners="true"
+                                app:isb_track_progress_bar_size="3dp"
+                                app:isb_track_background_bar_size="1dp"
+                                app:isb_thumb_width="15dp"
+
+                                android:layout_weight="1"
+                                app:isb_indicator_color="@color/colorPrimaryDark"
+                                app:isb_indicator_text_color="@color/white"
+                                app:isb_indicator_type="rectangle_rounded_corner"
+                                app:isb_max="255"
+                                app:isb_progress="50"
+                                app:isb_seek_bar_type="continuous"
+                                app:isb_text_color="@color/colorPrimaryDark"
+                                app:isb_thumb_color="@color/switch_green"
+                                app:isb_tick_color="@color/colorPrimaryDark"
+                                app:isb_tick_type="none"
+                                app:isb_track_background_bar_color="@color/switch_red"
+                                app:isb_track_progress_bar_color="@color/switch_green"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Low"
+                                    android:gravity="left"
+                                    android:layout_weight="1"
+                                    android:textSize="10sp" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medium"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="10sp" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="High"
+                                    android:gravity="right"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_Settings_PIN"
+                        android:layout_width="@dimen/size_img_setting"
+                        android:layout_height="@dimen/size_img_setting"
+                        android:src="@drawable/settings" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+  <!--  <LinearLayout
+        android:id="@+id/ll_seekbar_Dimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="02dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_low"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/medium" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seekbar_Dimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:isb_track_rounded_corners="true"
+                app:isb_track_progress_bar_size="3dp"
+                app:isb_track_background_bar_size="1dp"
+                app:isb_thumb_width="15dp"
+
+                android:layout_weight="1"
+                app:isb_indicator_color="@color/colorPrimaryDark"
+                app:isb_indicator_text_color="@color/white"
+                app:isb_indicator_type="rectangle_rounded_corner"
+                app:isb_max="255"
+                app:isb_progress="50"
+                app:isb_seek_bar_type="continuous"
+                app:isb_text_color="@color/colorPrimaryDark"
+                app:isb_thumb_color="@color/green"
+                app:isb_tick_color="@color/colorPrimaryDark"
+                app:isb_tick_type="none"
+                app:isb_track_background_bar_color="@android:color/holo_red_dark"
+                app:isb_track_progress_bar_color="@color/green" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:gravity="center"
+                   android:layout_weight="1"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High"
+                    android:gravity="right"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/img_high"
+            android:layout_width="23dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bulb_on" />
+    </LinearLayout>-->
+
+</LinearLayout>

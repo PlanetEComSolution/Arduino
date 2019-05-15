@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.pombingsoft.planet_iot.activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <EditText
+                    android:id="@+id/edt_firstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+
+
+                    android:maxLines="1"
+
+                    android:textSize="16sp">
+
+                    <requestFocus />
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+
+
+                android:inputType="textCapWords">
+
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                        android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLines="1"
+android:maxLength="10"
+                    android:textSize="16sp">
+
+
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+
+            >
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+
+                android:textSize="16sp">
+
+
+            </EditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/marginTop">
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Password"
+                android:inputType="textVisiblePassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="16sp"
+
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_Confirm_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="16sp"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

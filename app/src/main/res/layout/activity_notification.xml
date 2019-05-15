@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="bottom"
+    android:id="@+id/main_bg"
+    android:background="@color/colorAccent"
+    tools:context="com.pombingsoft.planet_iot.activity.DeviceListActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:text="Notification(s)"
+android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+       <!-- <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:text="No data found!"
+            android:textSize="18sp"
+            android:visibility="gone" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/layout_shape"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/inner_layout_margin"
+        android:padding="@dimen/inner_layout_padding"
+        >
+
+
+
+        <ListView
+            android:id="@+id/notification_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="No notification(s) found!"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

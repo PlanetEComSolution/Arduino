@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "986297575671",
+    "firebase_url": "https://arduino-27dac.firebaseio.com",
+    "project_id": "arduino-27dac",
+    "storage_bucket": "arduino-27dac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986297575671:android:1fa55812c0e3af9c",
+        "android_client_info": {
+          "package_name": "com.planet.iot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986297575671-ipavgvkpm26rc291852207811ova9kot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.planet.iot",
+            "certificate_hash": "19da8728119cefb7514520b78028c82fe3233654"
+          }
+        },
+        {
+          "client_id": "986297575671-0cfg1q35ciclgmfj822fjkbq6bst3f9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBru0iD44Qeg5lEWI5ranBOq_H_V5DsvSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986297575671-0cfg1q35ciclgmfj822fjkbq6bst3f9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

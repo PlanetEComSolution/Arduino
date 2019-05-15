@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.pombingsoft.planet_iot.activity.AddDeviceActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_AddDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/round_btn"
+
+        android:gravity="right|center_vertical"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_AddDevice"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/add_button" />
+        <TextView
+            android:id="@+id/text_addDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Device"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

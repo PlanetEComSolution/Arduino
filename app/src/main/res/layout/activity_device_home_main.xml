@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/activity_device_home" />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="16dp"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        >
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/edit"
+            fab:fab_title="Edit" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_DeviceDataLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/file"
+            fab:fab_title="Data Log" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_DeviceLockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/lock_device"
+            fab:fab_title="Lock Status" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_DeviceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/active"
+            fab:fab_title="Device Status" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_delete_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/rubbish_bin"
+            fab:fab_title="Delete Device" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_deviceDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/details"
+            fab:fab_title="Device Details" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_DeviceB_Scheduler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/fab_bg_color"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_icon="@drawable/clock_white_outline"
+            fab:fab_title="Device Schedule" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>

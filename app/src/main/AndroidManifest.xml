@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pombingsoft.planet_iot">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".crash_report.CrashReport"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/ThemeNoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="Register"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.switch_controller.UpdateDevice_A_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Update Device Details"
+            android:theme="@style/ThemeActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- android:theme="@style/ThemeNoActionBar" -->
+        <activity
+            android:name=".activity.DeviceListActivity"
+            android:theme="@style/ThemeNoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.Device_HomeActivity"
+            android:theme="@style/ThemeNoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.switch_controller.Add_Update_Schedule_Device_A_Activity"
+            android:label="Update Schedule"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.AddDeviceActivity_New"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/ThemeNoActionBar" />
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" -->
+        <activity
+            android:name=".activity.switch_controller.AddExistingDeviceActivity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.switch_controller.UpdateWifiCredActivity"
+            android:label=""
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.switch_controller.SwitchSettingActivity"
+            android:label="Setting"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.switch_controller.DeviceDetailActivity"
+            android:label="Device Details"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.switch_controller.SchedulerActivity"
+            android:label="Device Schedule(s)"
+            android:theme="@style/ThemeActionBar" />
+
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <activity
+            android:name=".activity.water_level_controller.SetUpActivity"
+            android:label="Water Tank Setting"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.air_quality_monitor.UpdateDevice_C_Activity"
+            android:label="Update Details"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.water_level_controller.Update_Device_B_Activity"
+            android:label="Update Details"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.security_monitor.UpdateDevice_D_Activity"
+            android:label="Update Details"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:label="Notification(s)"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.air_quality_monitor.SuperAdminActivity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.SuperAdminHomeActivity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.water_level_controller.Device_RunningSchedulerActivity"
+            android:label="Running Schedule(s)"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.water_level_controller.AddUpdateSchedule_Device_B_D_Activity"
+            android:label="Update Schedule"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.MyProfileActivity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="Change Password"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.UpdateProfileActivity"
+            android:label="Update Details"
+            android:theme="@style/ThemeActionBar" />
+        <activity android:name=".util.test" />
+        <activity android:name=".activity.TestActivity" />
+        <activity
+            android:name=".activity.security_monitor.SetRangeActivity"
+            android:label="Set Range"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.security_monitor.DataLogActivity"
+            android:label="Data Log"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.AboutUs"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.ContactUs"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.Help"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.FAQ_Activity"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.activity_new.Device_HomeActivity_new"
+            android:label="Control Device"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.security_monitor.UpdateRangeActivity"
+            android:label="Update Range"
+            android:theme="@style/ThemeActionBar" />
+        <activity
+            android:name=".activity.ActivityWithNavigationMenu"
+            android:theme="@style/AppTheme" />
+        <!-- android:launchMode="singleInstance" -->
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".activity.activity_new.Settings_Activity"
+            android:label="Device Setting"
+            android:theme="@style/ThemeActionBar" />
+        <!-- fcm -->
+        <!--
+        <service
+            android:name=".activity.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        -->
+        <service android:name=".activity.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+         Set custom default icon. This is used when no icon is set for incoming notification messages.
+         See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- fcm -->
+
+        <activity android:name=".activity.GDriveTestActivity"></activity>
+    </application>
+
+</manifest>

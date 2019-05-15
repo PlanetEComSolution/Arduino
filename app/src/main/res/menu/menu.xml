@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First button is the initial Fab of the menu -->
+    <!-- Don't need the title in this case, so let it empty -->
+    <item
+        android:id="@+id/main_option"
+        android:icon="@drawable/power_btn_red"
+        android:title=""/>
+
+    <!-- Options buttons of the Fab menu -->
+    <item
+        android:id="@+id/option1"
+        android:icon="@drawable/power_off"
+        android:title="dsgd" />
+
+    <item
+        android:id="@+id/option2"
+        android:icon="@drawable/power_btn_red"
+        android:title="gsgg" />
+
+    <item
+        android:id="@+id/option3"
+        android:icon="@drawable/power_btn_gren"
+        android:title="gdsgsdgdg" />
+
+    <item
+        android:id="@+id/option4"
+        android:icon="@drawable/power_btn_red"
+        android:title="gsddgsdgg" />
+
+</menu>
